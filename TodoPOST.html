@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO_API</title>
+    <style>
+        .topHeader{
+        display: flex;
+        justify-content: center; 
+        }
+        .ListView{
+        display: flex;
+         
+        }
+        .addButton{
+           background-color: aliceblue;
+           margin-left: 1em;
+           
+           
+        }
+        #list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .menu{
+           border: 1px solid black; 
+            width: 30%;
+            background-color:rgb(27, 99, 71) ;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            font-family: Papyrus;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>To- do List</h1>
+    
+    <div class="topHeader">
+      <input type="text" id="task" placeholder="Add task">
+      <button style="margin-left: 0.5em;" class="addButton">Add it!</button>
+    </div>
+    <div class="ul">
+        <ul id="list"></ul>
+    </div>
+    </div>
+    
+    
+    <script src="TodoAPI_POST_server.js" defer></script>
+    
+</body>
+</html>
