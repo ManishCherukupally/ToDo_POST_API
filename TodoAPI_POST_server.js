@@ -10,7 +10,7 @@ let addButton = document.querySelector('.addButton');
     console.log("test")
     allDeleteButton.forEach((element,index)=>{ 
       element.addEventListener("click",()=>{
-        // Using another System as server and it IP address
+        // Using another System as server and it's IP address
         fetch("http://192.168.0.153:5000/delete",{
           method:"POST",
           body:JSON.stringify({"index": index }),
@@ -43,7 +43,7 @@ let addButton = document.querySelector('.addButton');
 
    let taskText = taskInput
    if (taskText !== '') {
-    // Using another System as server and it IP address
+    // Using another System as server and it's IP address
      fetch("http://192.168.0.153:5000/add",{
        method:"POST",
        body:JSON.stringify(todoObj),
